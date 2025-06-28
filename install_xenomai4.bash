@@ -88,7 +88,7 @@ install_dependencies() {
                    libncurses-dev fakeroot zlib1g-dev curl wget \
                    linux-headers-$(uname -r) libssl-dev libelf-dev \
                    flex bison pkg-config cmake ninja-build libpci-dev \
-                   libusb-1.0-0-dev libudev-dev rt-tests
+                   libusb-1.0-0-dev libudev-dev rt-tests bc
     
     log "Dependencies installed successfully"
 }
