@@ -151,7 +151,8 @@ build_evl_kernel() {
     grep -E "CONFIG_EVL=|CONFIG_PREEMPT_RT=|CONFIG_NO_HZ_FULL=" .config
     
     # Critical safety check
-    local required_configs=(
+    local required_configs
+    required_configs=(
         "CONFIG_EVL=y"
         "CONFIG_PREEMPT_RT=y"
         "CONFIG_NO_HZ_FULL=y"
